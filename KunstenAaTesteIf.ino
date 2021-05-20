@@ -58,6 +58,7 @@ unsigned long pro2Tid = 0;
 unsigned long pro3Tid = 0;
 unsigned long pro4Tid = 0;
 unsigned long ingenPro = 0;
+unsigned long slettetTid = 0;
 
 int prosjekt1;
 int prosjekt2;
