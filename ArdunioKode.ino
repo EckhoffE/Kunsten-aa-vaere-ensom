@@ -150,7 +150,8 @@ void loop() {
     inndata = ESPserial.readString(); //Leser Stringen WiFi-modulen sender.
     inndata.trim(); //Fjerner mellomrom foran og bak bokstavene.
     Serial.print(inndata); //Brukes til debugging.
-    //Fargen paa RGB endrer seg avhengig av data fra Google Regneark
+    
+    //Fargen paa RGB endrer seg avhengig av data fra Google Regneark som er hva partner jobber med
     if(inndata.equals("roed")){
       ledRGB(255,0,0);
     }
@@ -164,7 +165,7 @@ void loop() {
       ledRGB(0,0,255);
     }
 
-    else{ (KKOMMERTERER
+    else if (inndata.equals("offline")){
       ledRGB(0,0,0);
     }
   }
